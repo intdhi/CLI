@@ -12,7 +12,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author initialD
+ * @author semua
  */
 public class database {
     private Connection con=null;
@@ -21,13 +21,12 @@ public class database {
     public database (){
         try {
             Class.forName("org.gjt.mm.mysql.Driver");
-            con = (Connection) DriverManager.getConnection("jdbc:mysql://localhost/statusclass","root","");
+            con = (Connection) DriverManager.getConnection("jdbc:mysql://localhost/statusclass","root",""); //koneksi database
             stat = (Statement) con.createStatement();
         }catch(Throwable e){
             JOptionPane.showMessageDialog(null,e.getMessage());
         }
     }
-    
     public ResultSet getResultSet (String a){
         ResultSet rs= null;
         try {
