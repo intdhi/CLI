@@ -9,7 +9,7 @@ import GUI.pertama;
 
 /**
  *
- * @author initialD
+ * @author dananngg
  */
 public class StatusClass {
 
